@@ -24,10 +24,11 @@ main {
 /* TEXT AREA */
 
 .text {
-  border: 1px red solid;
+  /* border: 1px red solid; */
   text-align: center;
   margin-bottom: 20px;
 }
+
 .text h2 {
   font-size: 100px;
 }
@@ -36,9 +37,9 @@ main {
   font-size: 50px;
 }
 
-/* CLOCk AREA */
+/* CLOCK AREA */
 .clock {
-  border: 1px red solid;
+  /* border: 1px red solid; */
 }
 
 .clock-face {
@@ -89,4 +90,42 @@ main {
   top: 10px;
   transform: translateY(-50%);
   width: 3px;
+}
+
+@media only screen and (max-width: 730px) {
+  .text h2 {
+    font-size: 80px;
+  }
+
+  .text p {
+    font-size: 30px;
+  }
+
+  .clock-face {
+    height: 350px;
+    width: 350px;
+  }
+
+  .hands {
+    width: 4px;
+    background-color: var(--darkblue);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    /* transform: rotate(-90deg); */
+    transform-origin: 50% 100%;
+  }
+
+  .hour-hand {
+    height: calc(350px / 2 - 20px - 70px);
+    top: 70px;
+  }
+
+  .min-hand {
+    height: calc(350px / 2 - 20px - 10px);
+  }
+
+  .sec-hand {
+    height: calc(350px / 2 - 20px - 10px);
+  }
 }
