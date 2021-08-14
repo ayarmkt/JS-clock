@@ -86,22 +86,24 @@ main {
 .sec-hand {
   height: calc(450px / 2 - 20px - 10px);
   top: 10px;
-
   width: 3px;
 }
 
 @media only screen and (max-width: 730px) {
+  /* changed from 80 to 65 */
   .text h2 {
-    font-size: 80px;
+    font-size: 65px;
   }
 
+  /* changed from 30 to 25 */
   .text p {
-    font-size: 30px;
+    font-size: 25px;
   }
 
+  /* changed from 350 to 250 */
   .clock-face {
-    height: 350px;
-    width: 350px;
+    height: 250px;
+    width: 250px;
   }
 
   .hands {
@@ -114,16 +116,17 @@ main {
     transform-origin: 50% 100%;
   }
 
+  /* changed from 350 to 250 */
   .hour-hand {
-    height: calc(350px / 2 - 20px - 70px);
+    height: calc(250px / 2 - 20px - 70px);
     top: 70px;
   }
 
   .min-hand {
-    height: calc(350px / 2 - 20px - 10px);
+    height: calc(250px / 2 - 20px - 10px);
   }
 
   .sec-hand {
-    height: calc(350px / 2 - 20px - 10px);
+    height: calc(250px / 2 - 20px - 10px);
   }
 }
