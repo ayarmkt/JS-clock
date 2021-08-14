@@ -90,20 +90,25 @@ main {
 }
 
 @media only screen and (max-width: 730px) {
-  /* changed from 80 to 65 */
+  /* added this */
+  main {
+    max-height: 100vh;
+  }
+
+  /* changed from 80 to 55 */
   .text h2 {
-    font-size: 65px;
+    font-size: 55px;
   }
 
-  /* changed from 30 to 25 */
+  /* changed from 30 to 20 */
   .text p {
-    font-size: 25px;
+    font-size: 20px;
   }
 
-  /* changed from 350 to 250 */
+  /* changed from 350 to 300 */
   .clock-face {
-    height: 250px;
-    width: 250px;
+    height: 300px;
+    width: 300px;
   }
 
   .hands {
@@ -116,17 +121,17 @@ main {
     transform-origin: 50% 100%;
   }
 
-  /* changed from 350 to 250 */
+  /* changed from 350 to 300 */
   .hour-hand {
-    height: calc(250px / 2 - 20px - 70px);
+    height: calc(300px / 2 - 20px - 70px);
     top: 70px;
   }
 
   .min-hand {
-    height: calc(250px / 2 - 20px - 10px);
+    height: calc(300px / 2 - 20px - 10px);
   }
 
   .sec-hand {
-    height: calc(250px / 2 - 20px - 10px);
+    height: calc(300px / 2 - 20px - 10px);
   }
 }
