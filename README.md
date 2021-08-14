@@ -1,4 +1,4 @@
 # JS-clock
-Created a clock that shows the current time. Made with HTML, CSS, JavaScript
+Created a clock with HTML, CSS, and JavaScript!
 
 Link for Demo:https://ayarmkt.github.io/JS-clock/
